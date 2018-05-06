@@ -1,4 +1,6 @@
 class Employee<ApplicationRecord
+  validates :first_name ,:last_name ,presence: true
+
   def update_phone_number ph_number
     self.update(phone_number=ph_number)
   end
